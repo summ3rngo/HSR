@@ -1,87 +1,87 @@
 {
     "paths": [
         {
-            "path_id": "0",
+            "path_id": 0,
             "name": "The Hunt",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/1c/Path_The_Hunt.png/revision/latest?cb=20230511094214"
+            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_hunt.png"
         },
         {
-            "path_id": "1",
+            "path_id": 1,
             "name": "Destruction",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/df/Path_Destruction.png/revision/latest?cb=20230508230545"
+            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_destruction.png"
         },
         {
-            "path_id": "2",
+            "path_id": 2,
             "name": "Erudition",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/5/53/Path_Erudition.png/revision/latest?cb=20230511094126"
+            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_erudition.png"
         },
         {
-            "path_id": "3",
+            "path_id": 3,
             "name": "Abundance",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/94/Path_Abundance.png/revision/latest?cb=20230508230528"
+            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_abundance.png"
         },
         {
-            "path_id": "4",
+            "path_id": 4,
             "name": "Harmony",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7e/Path_Harmony.png/revision/latest?cb=20230508230617"
+            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_harmony.png"
         },
         {
-            "path_id": "5",
+            "path_id": 5,
             "name": "Nihility",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/45/Path_Nihility.png/revision/latest?cb=20230508230649"
+            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_nihility.png"
         },
         {
-            "path_id": "6",
+            "path_id": 6,
             "name": "Preservation",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/37/Path_Preservation.png/revision/latest?cb=20230511094124"
+            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_preservation.png"
         }
     ],
 
     "elements": [
         {
-            "element_id": "0",
+            "element_id": 0,
             "name": "Physical",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/6/69/Type_Physical.png/revision/latest/thumbnail/width/360/height/360?cb=20220610120901"
+            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Physical.webp"
         },
         {
-            "element_id": "1",
+            "element_id": 1,
             "name": "Fire",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f0/Type_Fire.png/revision/latest?cb=20220610120131"
+            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Fire.webp"
         },
         {
-            "element_id": "2",
+            "element_id": 2,
             "name": "Ice",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Type_Ice.png/revision/latest/thumbnail/width/360/height/360?cb=20220610120329"
+            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Ice.webp"
         },
         {
-            "element_id": "3",
+            "element_id": 3,
             "name": "Wind",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/e/ec/Type_Wind.png/revision/latest?cb=20220610121015"
+            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Wind.webp"
         },
         {
-            "element_id": "4",
+            "element_id": 4,
             "name": "Lightning",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/15/Type_Lightning.png/revision/latest?cb=20220610120726"
+            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Lightning.webp"
         },
         {
-            "element_id": "5",
+            "element_id": 5,
             "name": "Quantum",
-            "img_src":  "https://static.wikia.nocookie.net/houkai-star-rail/images/5/54/Type_Quantum.png/revision/latest/thumbnail/width/360/height/360?cb=20220610121124"
+            "img_src":  "https://www.enduins.com/wp-content/uploads/2023/04/Element_Quantum.webp"
         },
         {
-            "element_id": "6",
+            "element_id": 6,
             "name": "Imaginary",
-            "img_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2f/Type_Imaginary.png/revision/latest/thumbnail/width/360/height/360?cb=20220610120517"
+            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Imaginary.webp"
         }
     ],
 
     "characters": [
         {
-            "character_id": "0",
+            "character_id": 0,
             "name": "Argenti",
-            "element_id": "1",
-            "path_id": "2",
-            "rarity": "5",
+            "element_id": 0,
+            "path_id": 2,
+            "rarity": 5,
             "level_states": [
                 {
                     "level": 1,
@@ -175,11 +175,11 @@
             "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
         },
         {
-            "character_id": "1",
+            "character_id": 1,
             "name": "Bailu",
-            "element_id": "4",
-            "path_id": "3",
-            "rarity": "5",
+            "element_id": 4,
+            "path_id": 3,
+            "rarity": 5,
             "level_states": [
                 {
                     "level": 1,
@@ -273,11 +273,11 @@
             "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
         },
         {
-            "character_id": "2",
+            "character_id": 2,
             "name": "Blade",
-            "element_id": "3",
-            "path_id": "1",
-            "rarity": "5",
+            "element_id": 3,
+            "path_id": 1,
+            "rarity": 5,
             "level_states": [
                 {
                     "level": 1,
@@ -371,11 +371,11 @@
             "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
         },
         {
-            "character_id": "9",
+            "character_id": 9,
             "name": "HuoHuo",
-            "element_id": "3",
-            "path_id": "3",
-            "rarity": "5",
+            "element_id": 3,
+            "path_id": 3,
+            "rarity": 5,
             "level_states": [
                 {
                     "level": 1,
@@ -471,11 +471,11 @@
             "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
         },
         {
-            "character_id": "25",
+            "character_id": 25,
             "name": "Hanya",
-            "element_id": "0",
-            "path_id": "4",
-            "rarity": "4",
+            "element_id": 0,
+            "path_id": 4,
+            "rarity": 4,
             "level_states": [
                 {
                     "level": 1,
@@ -570,6 +570,6 @@
         }
     ],
     "version_update_1.5": {
-        "character_ids": ["0", "1", "2", "9", "25"]
+        "character_ids": [0, 1, 2, 9, 25]
     }
 }

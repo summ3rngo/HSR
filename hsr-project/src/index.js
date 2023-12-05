@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css'
 import Root from './routes/Root'
 import Homepage from './routes/Homepage'
+import Characters from './routes/Characters'
+import CharacterSheet from './routes/CharacterSheet';
 
 const router = createBrowserRouter([
   {
@@ -31,10 +33,47 @@ const router = createBrowserRouter([
                   // Filter characters to match the character IDs from the version update
                   return characters.filter(character => characterIds.includes(character.character_id));
                   
-        });
-    });
+            });
+          });
         }
 
+      },
+      {
+        path: '/characters',
+        element: <Characters />,
+        loader: async () => {
+          const charactersURL = 'http://localhost:3001/characters';
+          const pathsURL = 'http://localhost:3001/paths';
+          const elementsURL = 'http://localhost:3001/elements';
+
+          // Fetch all resources concurrently
+          const [charactersResponse, pathsResponse, elementsResponse] = await Promise.all([
+            fetch(charactersURL),
+            fetch(pathsURL),
+            fetch(elementsURL),
+          ]);
+
+          // Convert all responses to JSON
+          const [characters, paths, elements] = await Promise.all([
+            charactersResponse.json(),
+            pathsResponse.json(),
+            elementsResponse.json(),
+          ]);
+
+          // Return a combined result
+          return { characters, paths, elements };
+        }
+        
+      },
+      {
+        path: '/characters/:characterId',
+        element: <CharacterSheet />,
+        loader(loaderData) {
+          return fetch(`http://localhost:3001/characters/${loaderData.params.characterId}`)
+          .then((response) => {
+            return response.json();
+          })
+        }
       }
     ]
   }

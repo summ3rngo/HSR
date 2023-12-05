@@ -1,0 +1,82 @@
+.headshot:hover .img-container span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5));
+    animation: animate_one 2s linear infinite;
+    z-index: 10;
+  }
+  
+  @keyframes animate_one {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+  }
+
+  .headshot:hover .img-container span:nth-child(2) {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5));
+    animation: animate_two 2s linear infinite;
+    z-index: 10;
+    animation-delay: 1s;
+  }
+  
+  @keyframes animate_two {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+  }
+
+  .headshot:hover .img-container span:nth-child(3) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5));
+    animation: animate_three 2s linear infinite;
+    z-index: 10;
+  }
+  
+  @keyframes animate_three{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+
+  .headshot:hover .img-container span:nth-child(4) {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 2px;
+    background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.5));
+    animation: animate_four 2s linear infinite;
+    z-index: 10;
+    animation-delay: 1s;
+  }
+  
+  @keyframes animate_four {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+  }
+

@@ -23,29 +23,29 @@ const SideBar = (props) => {
                 </div>
                 <ul className='nav nav-pills flex-column mb-auto no-gutters'>
                 <li className={isActive('/') ? 'nav-item active' : 'nav-item'}>
-                        <span className='icon-link'><FontAwesomeIcon icon={faHouse} className='sidebar-icons'/><Link to="/" className='nav-link'> 
+                        <span className='icon-link'><FontAwesomeIcon icon={faHouse} className='sidebar-icons icons'/><Link to="/" className='nav-link'> 
                         {!props.isCollapsed && <span className="text-label">Home</span>}
                         </Link></span>
                     </li>
                     <li className={isActive('/characters') ? 'nav-item active' : 'nav-item'}>
-                        <span className='icon-link'><FontAwesomeIcon icon={faUserGroup} className='sidebar-icons'/><Link to="/characters" className='nav-link'> 
+                        <span className='icon-link'><FontAwesomeIcon icon={faUserGroup} className='sidebar-icons icons'/><Link to="/characters" className='nav-link'> 
                         {!props.isCollapsed && <span className="text-label">Characters</span>}
                         </Link></span>
                     </li>
                     <li className={isActive('/tierlist') ? 'nav-item active' : 'nav-item'}>
-                        <span className='icon-link'><FontAwesomeIcon icon={faRankingStar} className='sidebar-icons'/><Link to="/tierlist" className='nav-link'> 
+                        <span className='icon-link'><FontAwesomeIcon icon={faRankingStar} className='sidebar-icons icons'/><Link to="/tierlist" className='nav-link'> 
                         {!props.isCollapsed && <span className="text-label">Tier List</span>} </Link></span>
                     </li>
                     <li className={isActive('/light-cones') ? 'nav-item active' : 'nav-item'}>
-                        <span className='icon-link'><FontAwesomeIcon icon={faCube} className='sidebar-icons'/><Link to="/light-cones" className='nav-link'> 
+                        <span className='icon-link'><FontAwesomeIcon icon={faCube} className='sidebar-icons icons'/><Link to="/light-cones" className='nav-link'> 
                         {!props.isCollapsed && <span className="text-label">Light Cones</span>}</Link></span>
                     </li>
                     <li className={isActive('/relics') ? 'nav-item active' : 'nav-item'}>
-                        <span className='icon-link'><FontAwesomeIcon icon={faRing} className='sidebar-icons'/><Link to="/relics" className='nav-link'> 
+                        <span className='icon-link'><FontAwesomeIcon icon={faRing} className='sidebar-icons icons'/><Link to="/relics" className='nav-link'> 
                         {!props.isCollapsed && <span className="text-label">Relics</span>}</Link></span>
                     </li>
                     <li className={isActive('/my-characters') ? 'nav-item active' : 'nav-item'}>
-                        <span className='icon-link'><FilePerson className='sidebar-icons'/><Link to="/my-characters" className='nav-link'> 
+                        <span className='icon-link'><FilePerson className='sidebar-icons icons'/><Link to="/my-characters" className='nav-link'> 
                         {!props.isCollapsed && <span className="text-label">My Collection</span>}</Link></span>
                     </li>
 

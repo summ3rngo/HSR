@@ -20,4 +20,13 @@ code {
   --border: #352E44;
   --secondary-color: #E6D0A1;
   --secondary-background-color: #363240;
+  --hover-secondary-color: #dabe83;
+  --five-star-bg: linear-gradient(to bottom,
+                            rgb(112, 77, 82),
+                            rgb(198, 165, 113));
+  --four-star-bg: linear-gradient(to bottom,
+                            rgb(61, 62, 105),
+                            rgb(128, 93, 196));
+  --four-star: rgb(175, 111, 195);
+  --five-star: rgb(238, 170, 70);
 }

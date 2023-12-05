@@ -33,10 +33,11 @@ const Homepage = () => {
                     Version 1.5 Highlights
                 </div>
                 <div className='card-content'>
-                    <div className='row'>
+                    <div className='row d-flex justify-content-center'>
                        { characters.map((character) => {
                             return <Card key={character.character_id} src={character.headshot}
-                            name={character.name} />
+                            name={character.name} 
+                            rarity={character.rarity}/>
                         })
                     }
                     </div>
