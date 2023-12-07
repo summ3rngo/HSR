@@ -145,11 +145,13 @@
 /* Main content area */
 .main-content {
     margin-left: 25%; /* Space for the sidebar */
+    position: relative;
 }
 
 /* Adjust margin when sidebar is collapsed */
 .main-content.collapsed {
     margin-left: 8.333%;
+    position: relative;
 }
 
 /* Homepage CSS */
@@ -314,7 +316,6 @@
     border-radius: 5px;
     border: 2px solid var(--secondary-color);
     width: 100%;
-    margin: 10px 0;
   }
 
   .searchbar .search-input {
@@ -336,12 +337,16 @@
     border-radius: 0px;
   }
 
+  .search-bar {
+    display: flex;
+    margin: 10px 0;
+  }
   .search-btn {
     background-color: var(--secondary-color);
     border-radius: 0px;
   }
 
-  .searchbar .search-btn:hover {
+  .search-btn:hover {
     background-color: var(--hover-secondary-color) !important;
   }
 
@@ -480,4 +485,404 @@
 
   .headshot:hover .headshot-img {
     transform: scale(1.1);
+  }
+
+  /* Individual Character CSS */
+.character-profile {
+    height: 500px; 
+    width: 100%; 
+    margin: 20px 0;
+    display: flex;
+    background-color: var(--secondary-background-color);
+    border-radius: 5px;
+}
+
+.character-img-container {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.character-img {
+    width: auto;
+    height: 100%;
+}
+
+.character-stats {
+    width: 65%;
+    position: relative;
+    padding: 10px 25px;
+}
+
+.character-stats .element-img {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+  }
+
+.character-stats .element-container {
+    width: 100%;
+    height: 50px;
+    justify-content: end;
+   
+}
+
+.character-stats .element-container:hover, .character-stats .path-container:hover {
+    background-color: transparent;
+} 
+
+.element-row {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.character-stats .path-content {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: var(--primary-background-color);
+    justify-content: center;
+    border: 3px;
+}
+
+.level-content {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: var(--primary-background-color);
+    justify-content: center;
+    border: 3px;
+}
+
+.character-stats .path-container {
+    width: 45px;
+    height: 100%;
+}
+.stat-row {
+    margin: 15px 0;
+}
+
+.character-stats .path-img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.character-stats h5 {
+    margin: 0 5px;
+    font-size: 400;
+    font-size: 16px;
+    color: white;
+}
+
+/* Progress Bar CSS */
+
+.progressbar-container {
+    width: 100%;
+    background-color: var(--primary-background-color);
+    height: 10px;
+    border-radius: 10px;
+
+}
+
+.progress {
+    height: 100%;
+}
+
+.stat-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-row .stat-container {
+    height: 50px;
+}
+
+.left-container {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    margin-right: 10px
+}
+
+.stat-row .left-container h5 {
+    width: 30px;
+}
+
+.right-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.character-info-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.taunt-icon {
+    padding: 5px;
+}
+
+.abilities {
+    min-height: 600px;
+}
+
+.abilities .card-content {
+    padding: 10px;
+    flex-direction: column;
+}
+
+.abilities .ability {
+    padding: 25px;
+    background-color: var(--primary-background-color);
+    border-radius: 5px;
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 5px;
+}
+
+.ability .left-container {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.ability .right-container  {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ability .icon-container {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: var(--sidebar-background);
+    border-radius: 50%;
+}
+
+.ability .ability-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.left-container h5.ability-text {
+    width: 100%;
+    text-align: center;
+}
+
+p.ability-text {
+    font-size: 14px;
+}
+
+.add-btn {
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.collection-card {
+    height: 300px;
+    gap: 5px;
+}
+
+.collection-card .img-container {
+    height: 100%;
+    width: 100%;
+}
+
+.collection-card .img {
+    width: 100%;
+    height: auto;
+}
+
+.collection-card .element-img {
+    width: 40px;
+    height: 40px;
+    transform: rotate(-45deg);
+  }
+
+  .collection-card .element-img-container {
+    width: 39px;
+    height: 39px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  .overlay-stats {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 5;
+  }
+
+  .collection-card .stat-row {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .level-text {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .collection-card h5 {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .collection-card .character-info-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+  }
+
+  .buttons-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .collection-icon {
+    color: white;
+  }
+
+  .btn, .btn:hover, .btn:active {
+    outline: none;
+    border: none;
+  }
+
+  .add-character-form {
+    position: absolute;
+    z-index: 10;
+    background-color: var(--primary-background-color);
+    padding: 30px;
+    width: 60%;
+    height: 30%;
+    border-radius: 5px;
+    left: 50%;
+    top: calc(100vh * 0.5);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid var(--secondary-color);
+  }
+
+  .add-character-form input {
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border: 2px solid var(--secondary-color);
+    transition: border 1.5s ease-in;
+    color: white;
+  }
+
+  .add-character-form input:focus {
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border: 2px solid var(--selected);
+    color: white;
+    box-shadow: none !important;
+  }
+
+  .add-character-form input::placeholder {
+    color: var(--selected);
+  }
+
+  .add-character-form label {
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 50, 64, 0.7);
+    z-index: 9;
+  }
+
+  .cancel-btn {
+    background-color: var(--border);
+    color: var(--secondary-color);
+
+  }
+
+  .cancel-btn:hover {
+    color: white;
+    background-color: var(--secondary-background-color);
+  }
+
+  .cancel-btn:active, .cancel-btn:focus {
+    color: white;
+    background-color: var(--selected);
+
+  }
+
+  .pretty-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-background-color);
+  }
+
+  .pretty-btn:hover {
+    background-color: var(--selected);
+  }
+
+  .pretty-btn:active {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
+  }
+
+  input:-internal-autofill-selected {
+    background-color: transparent;
+  }
+
+  .comment-area {
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border: 2px solid var(--secondary-color);
+    transition: border 1.5s ease-in;
+    color: white;
+    width: 100%;
+  }
+
+  .comment-area textarea {
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    transition: border 1.5s ease-in;
+    color: white;
+    width: 100%;
+  }
+
+  .comment-area textarea:focus {
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border: 2px solid var(--selected);
+    color: white;
+    box-shadow: none !important;
   }

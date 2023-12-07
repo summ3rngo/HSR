@@ -1,575 +1,649 @@
 {
-    "paths": [
-        {
-            "path_id": 0,
-            "name": "The Hunt",
-            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_hunt.png"
-        },
-        {
-            "path_id": 1,
-            "name": "Destruction",
-            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_destruction.png"
-        },
-        {
-            "path_id": 2,
-            "name": "Erudition",
-            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_erudition.png"
-        },
-        {
-            "path_id": 3,
-            "name": "Abundance",
-            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_abundance.png"
-        },
-        {
-            "path_id": 4,
-            "name": "Harmony",
-            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_harmony.png"
-        },
-        {
-            "path_id": 5,
-            "name": "Nihility",
-            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_nihility.png"
-        },
-        {
-            "path_id": 6,
-            "name": "Preservation",
-            "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_preservation.png"
-        }
-    ],
-
-    "elements": [
-        {
-            "element_id": 0,
-            "name": "Physical",
-            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Physical.webp"
-        },
-        {
-            "element_id": 1,
-            "name": "Fire",
-            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Fire.webp"
-        },
-        {
-            "element_id": 2,
-            "name": "Ice",
-            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Ice.webp"
-        },
-        {
-            "element_id": 3,
-            "name": "Wind",
-            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Wind.webp"
-        },
-        {
-            "element_id": 4,
-            "name": "Lightning",
-            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Lightning.webp"
-        },
-        {
-            "element_id": 5,
-            "name": "Quantum",
-            "img_src":  "https://www.enduins.com/wp-content/uploads/2023/04/Element_Quantum.webp"
-        },
-        {
-            "element_id": 6,
-            "name": "Imaginary",
-            "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Imaginary.webp"
-        }
-    ],
-
-    "characters": [
-        {
-            "character_id": 0,
-            "name": "Argenti",
-            "element_id": 0,
-            "path_id": 2,
-            "rarity": 5,
-            "level_states": [
-                {
-                    "level": 1,
-                    "hp": 184,
-                    "atk": 81,
-                    "def": 69,
-                    "spd": 98
-                },
-                {
-                    "level": 80,
-                    "hp": 1358,
-                    "atk": 601,
-                    "def": 509,
-                    "spd": 98
-                }
-            ],
-            "abilities": [
-                {
-                    "type": "Basic ATK",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Single Target",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 20
-                        }
-                    ],
-                    "toughness_dmg": 30,
-                    "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
-                },
-                {
-                    "type": "Skill",
-                    "name": "Talisman: Protection",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 30
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
-                },
-                {
-                    "type": "Ultimate",
-                    "name": "Tail: Spiritual Domination",
-                    "tag": "Support",
-                    "energy": [
-                        {
-                            "cost": 140,
-                            "generation": 5
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
-                },
-                {
-                    "type": "Talent",
-                    "name": "Possession: Ethereal Metaflow",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
-                },
-                {
-                    "type": "Technique",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Fiend: Impeachment of Evil",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
-                }
-
-            ],
-            "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
-            "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
-        },
-        {
-            "character_id": 1,
-            "name": "Bailu",
-            "element_id": 4,
-            "path_id": 3,
-            "rarity": 5,
-            "level_states": [
-                {
-                    "level": 1,
-                    "hp": 184,
-                    "atk": 81,
-                    "def": 69,
-                    "spd": 98
-                },
-                {
-                    "level": 80,
-                    "hp": 1358,
-                    "atk": 601,
-                    "def": 509,
-                    "spd": 98
-                }
-            ],
-            "abilities": [
-                {
-                    "type": "Basic ATK",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Single Target",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 20
-                        }
-                    ],
-                    "toughness_dmg": 30,
-                    "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
-                },
-                {
-                    "type": "Skill",
-                    "name": "Talisman: Protection",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 30
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
-                },
-                {
-                    "type": "Ultimate",
-                    "name": "Tail: Spiritual Domination",
-                    "tag": "Support",
-                    "energy": [
-                        {
-                            "cost": 140,
-                            "generation": 5
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
-                },
-                {
-                    "type": "Talent",
-                    "name": "Possession: Ethereal Metaflow",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
-                },
-                {
-                    "type": "Technique",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Fiend: Impeachment of Evil",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
-                }
-
-            ],
-            "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
-            "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
-        },
-        {
-            "character_id": 2,
-            "name": "Blade",
-            "element_id": 3,
-            "path_id": 1,
-            "rarity": 5,
-            "level_states": [
-                {
-                    "level": 1,
-                    "hp": 184,
-                    "atk": 81,
-                    "def": 69,
-                    "spd": 98
-                },
-                {
-                    "level": 80,
-                    "hp": 1358,
-                    "atk": 601,
-                    "def": 509,
-                    "spd": 98
-                }
-            ],
-            "abilities": [
-                {
-                    "type": "Basic ATK",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Single Target",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 20
-                        }
-                    ],
-                    "toughness_dmg": 30,
-                    "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
-                },
-                {
-                    "type": "Skill",
-                    "name": "Talisman: Protection",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 30
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
-                },
-                {
-                    "type": "Ultimate",
-                    "name": "Tail: Spiritual Domination",
-                    "tag": "Support",
-                    "energy": [
-                        {
-                            "cost": 140,
-                            "generation": 5
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
-                },
-                {
-                    "type": "Talent",
-                    "name": "Possession: Ethereal Metaflow",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
-                },
-                {
-                    "type": "Technique",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Fiend: Impeachment of Evil",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
-                }
-
-            ],
-            "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
-            "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
-        },
-        {
-            "character_id": 9,
-            "name": "HuoHuo",
-            "element_id": 3,
-            "path_id": 3,
-            "rarity": 5,
-            "level_states": [
-                {
-                    "level": 1,
-                    "hp": 184,
-                    "atk": 81,
-                    "def": 69,
-                    "spd": 98,
-                    "taunt": 100
-                },
-                {
-                    "level": 80,
-                    "hp": 1358,
-                    "atk": 601,
-                    "def": 509,
-                    "spd": 98,
-                    "taunt": 100
-                }
-            ],
-            "abilities": [
-                {
-                    "type": "Basic ATK",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Single Target",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 20
-                        }
-                    ],
-                    "toughness_dmg": 30,
-                    "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
-                },
-                {
-                    "type": "Skill",
-                    "name": "Talisman: Protection",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 30
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
-                },
-                {
-                    "type": "Ultimate",
-                    "name": "Tail: Spiritual Domination",
-                    "tag": "Support",
-                    "energy": [
-                        {
-                            "cost": 140,
-                            "generation": 5
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
-                },
-                {
-                    "type": "Talent",
-                    "name": "Possession: Ethereal Metaflow",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
-                },
-                {
-                    "type": "Technique",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Fiend: Impeachment of Evil",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
-                }
-
-            ],
-            "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
-            "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
-        },
-        {
-            "character_id": 25,
-            "name": "Hanya",
-            "element_id": 0,
-            "path_id": 4,
-            "rarity": 4,
-            "level_states": [
-                {
-                    "level": 1,
-                    "hp": 184,
-                    "atk": 81,
-                    "def": 69,
-                    "spd": 98
-                },
-                {
-                    "level": 80,
-                    "hp": 1358,
-                    "atk": 601,
-                    "def": 509,
-                    "spd": 98
-                }
-            ],
-            "abilities": [
-                {
-                    "type": "Basic ATK",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Single Target",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 20
-                        }
-                    ],
-                    "toughness_dmg": 30,
-                    "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
-                },
-                {
-                    "type": "Skill",
-                    "name": "Talisman: Protection",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": 30
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
-                },
-                {
-                    "type": "Ultimate",
-                    "name": "Tail: Spiritual Domination",
-                    "tag": "Support",
-                    "energy": [
-                        {
-                            "cost": 140,
-                            "generation": 5
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
-                },
-                {
-                    "type": "Talent",
-                    "name": "Possession: Ethereal Metaflow",
-                    "tag": "Restore",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
-                },
-                {
-                    "type": "Technique",
-                    "name": "Banner: Stormcaller",
-                    "tag": "Fiend: Impeachment of Evil",
-                    "energy": [
-                        {
-                            "cost": null,
-                            "generation": null
-                        }
-                    ],
-                    "toughness_dmg": null,
-                    "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
-                    "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
-                }
-
-            ],
-            "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
-            "spash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
-        }
-    ],
-    "version_update_1.5": {
-        "character_ids": [0, 1, 2, 9, 25]
+  "paths": [
+    {
+      "id": 0,
+      "name": "The Hunt",
+      "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_hunt.png"
+    },
+    {
+      "id": 1,
+      "name": "Destruction",
+      "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_destruction.png"
+    },
+    {
+      "id": 2,
+      "name": "Erudition",
+      "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_erudition.png"
+    },
+    {
+      "id": 3,
+      "name": "Abundance",
+      "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_abundance.png"
+    },
+    {
+      "id": 4,
+      "name": "Harmony",
+      "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_harmony.png"
+    },
+    {
+      "id": 5,
+      "name": "Nihility",
+      "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_nihility.png"
+    },
+    {
+      "id": 6,
+      "name": "Preservation",
+      "img_src": "https://rerollcdn.com/STARRAIL/Filters/path_the_preservation.png"
     }
+  ],
+  "elements": [
+    {
+      "id": 0,
+      "name": "Physical",
+      "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Physical.webp"
+    },
+    {
+      "id": 1,
+      "name": "Fire",
+      "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Fire.webp"
+    },
+    {
+      "id": 2,
+      "name": "Ice",
+      "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Ice.webp"
+    },
+    {
+      "id": 3,
+      "name": "Wind",
+      "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Wind.webp"
+    },
+    {
+      "id": 4,
+      "name": "Lightning",
+      "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Lightning.webp"
+    },
+    {
+      "id": 5,
+      "name": "Quantum",
+      "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Quantum.webp"
+    },
+    {
+      "id": 6,
+      "name": "Imaginary",
+      "img_src": "https://www.enduins.com/wp-content/uploads/2023/04/Element_Imaginary.webp"
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "username": "Test",
+      "userCharacters": [
+        {
+          "characterId": 9,
+          "customStats": {
+            "level": 80,
+            "hp": 5700,
+            "atk": 1600,
+            "def": 1050,
+            "spd": 110
+          }
+        }
+      ]
+    },
+    {
+      "username": "Shumi",
+      "id": 1,
+      "userCharacters": []
+    },
+    {
+      "username": "Test2",
+      "id": 2,
+      "userCharacters": []
+    },
+    {
+      "username": "",
+      "userCharacters": [],
+      "id": 3
+    },
+    {
+      "username": "hi",
+      "userCharacters": [
+        {
+          "characterId": 9,
+          "customStats": {
+            "level": 80,
+            "hp": 5900,
+            "atk": 1400,
+            "def": 1200,
+            "spd": 125
+          }
+        }
+      ],
+      "id": 4
+    },
+    {
+      "username": "hello",
+      "userCharacters": [
+        {
+          "characterId": 9,
+          "customStats": {
+            "level": 80,
+            "hp": 5700,
+            "atk": 1500,
+            "def": 1200,
+            "spd": 110
+          }
+        }
+      ],
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "body": "This is a comment.",
+      "timestamp": "2023-12-06T12:00:00Z"
+    }
+  ],
+  "characters": [
+    {
+      "id": 0,
+      "name": "Argenti",
+      "elementId": 0,
+      "pathId": 2,
+      "rarity": 5,
+      "level_states": [
+        {
+          "level": 1,
+          "hp": 184,
+          "atk": 81,
+          "def": 69,
+          "spd": 98
+        },
+        {
+          "level": 80,
+          "hp": 1358,
+          "atk": 601,
+          "def": 509,
+          "spd": 98
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Basic ATK",
+          "name": "Banner: Stormcaller",
+          "tag": "Single Target",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 20
+            }
+          ],
+          "toughness_dmg": 30,
+          "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
+        },
+        {
+          "type": "Skill",
+          "name": "Talisman: Protection",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 30
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
+        },
+        {
+          "type": "Ultimate",
+          "name": "Tail: Spiritual Domination",
+          "tag": "Support",
+          "energy": [
+            {
+              "cost": 140,
+              "generation": 5
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
+        },
+        {
+          "type": "Talent",
+          "name": "Possession: Ethereal Metaflow",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
+        },
+        {
+          "type": "Technique",
+          "name": "Banner: Stormcaller",
+          "tag": "Fiend: Impeachment of Evil",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
+        }
+      ],
+      "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
+      "splash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
+    },
+    {
+      "id": 1,
+      "name": "Bailu",
+      "elementId": 4,
+      "pathId": 3,
+      "rarity": 5,
+      "level_states": [
+        {
+          "level": 1,
+          "hp": 184,
+          "atk": 81,
+          "def": 69,
+          "spd": 98
+        },
+        {
+          "level": 80,
+          "hp": 1358,
+          "atk": 601,
+          "def": 509,
+          "spd": 98
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Basic ATK",
+          "name": "Banner: Stormcaller",
+          "tag": "Single Target",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 20
+            }
+          ],
+          "toughness_dmg": 30,
+          "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
+        },
+        {
+          "type": "Skill",
+          "name": "Talisman: Protection",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 30
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
+        },
+        {
+          "type": "Ultimate",
+          "name": "Tail: Spiritual Domination",
+          "tag": "Support",
+          "energy": [
+            {
+              "cost": 140,
+              "generation": 5
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
+        },
+        {
+          "type": "Talent",
+          "name": "Possession: Ethereal Metaflow",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
+        },
+        {
+          "type": "Technique",
+          "name": "Banner: Stormcaller",
+          "tag": "Fiend: Impeachment of Evil",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
+        }
+      ],
+      "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
+      "splash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
+    },
+    {
+      "id": 2,
+      "name": "Blade",
+      "elementId": 3,
+      "pathId": 1,
+      "rarity": 5,
+      "level_states": [
+        {
+          "level": 1,
+          "hp": 184,
+          "atk": 81,
+          "def": 69,
+          "spd": 98
+        },
+        {
+          "level": 80,
+          "hp": 1358,
+          "atk": 601,
+          "def": 509,
+          "spd": 98
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Basic ATK",
+          "name": "Banner: Stormcaller",
+          "tag": "Single Target",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 20
+            }
+          ],
+          "toughness_dmg": 30,
+          "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Ability_Banner_Stormcaller.png/revision/latest/scale-to-width-down/46?cb=20231115023341"
+        },
+        {
+          "type": "Skill",
+          "name": "Talisman: Protection",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 30
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Ability_Talisman_Protection.png/revision/latest/scale-to-width-down/46?cb=20231115023340"
+        },
+        {
+          "type": "Ultimate",
+          "name": "Tail: Spiritual Domination",
+          "tag": "Support",
+          "energy": [
+            {
+              "cost": 140,
+              "generation": 5
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/27/Ability_Tail_Spiritual_Domination.png/revision/latest/scale-to-width-down/46?cb=20231115023346"
+        },
+        {
+          "type": "Talent",
+          "name": "Possession: Ethereal Metaflow",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/35/Ability_Possession_Ethereal_Metaflow.png/revision/latest/scale-to-width-down/46?cb=20231115023345"
+        },
+        {
+          "type": "Technique",
+          "name": "Banner: Stormcaller",
+          "tag": "Fiend: Impeachment of Evil",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
+          "icon_src": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Ability_Fiend_Impeachment_of_Evil.png/revision/latest/scale-to-width-down/46?cb=20231115023343"
+        }
+      ],
+      "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
+      "splash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
+    },
+    {
+      "id": 9,
+      "name": "HuoHuo",
+      "elementId": 3,
+      "pathId": 3,
+      "rarity": 5,
+      "level_states": [
+        {
+          "level": 1,
+          "hp": 184,
+          "atk": 81,
+          "def": 69,
+          "spd": 98,
+          "taunt": 100
+        },
+        {
+          "level": 80,
+          "hp": 1358,
+          "atk": 601,
+          "def": 509,
+          "spd": 98,
+          "taunt": 100
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Basic ATK",
+          "name": "Banner: Stormcaller",
+          "tag": "Single Target",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 20
+            }
+          ],
+          "toughness_dmg": 30,
+          "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Normal.png"
+        },
+        {
+          "type": "Skill",
+          "name": "Talisman: Protection",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 30
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_BP.png"
+        },
+        {
+          "type": "Ultimate",
+          "name": "Tail: Spiritual Domination",
+          "tag": "Support",
+          "energy": [
+            {
+              "cost": 140,
+              "generation": 5
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Ultra_on.png"
+        },
+        {
+          "type": "Talent",
+          "name": "Possession: Ethereal Metaflow",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Passive.png"
+        },
+        {
+          "type": "Technique",
+          "name": "Banner: Stormcaller",
+          "tag": "Fiend: Impeachment of Evil",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Maze.png"
+        }
+      ],
+      "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
+      "regular_art": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/499c570b-7931-4a84-9121-8c4a1c02a470/dga8ybk-cd34710e-0d21-430c-be39-82b1903fdddc.png/v1/fill/w_1280,h_1700/huohuo_honkai_star_rail_render_by_mhesagnta_dga8ybk-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwMCIsInBhdGgiOiJcL2ZcLzQ5OWM1NzBiLTc5MzEtNGE4NC05MTIxLThjNGExYzAyYTQ3MFwvZGdhOHliay1jZDM0NzEwZS0wZDIxLTQzMGMtYmUzOS04MmIxOTAzZmRkZGMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.DgRjrbtXutZ7GPD24fxPJxpITuHdKQn34DW2f0GeW7k",
+      "splash_art": "https://api.yatta.top/hsr/assets/UI/avatar/large/1217.sm.png?vh=2023100901s"
+    },
+    {
+      "id": 25,
+      "name": "Hanya",
+      "elementId": 0,
+      "pathId": 4,
+      "rarity": 4,
+      "level_states": [
+        {
+          "level": 1,
+          "hp": 184,
+          "atk": 81,
+          "def": 69,
+          "spd": 98
+        },
+        {
+          "level": 80,
+          "hp": 1358,
+          "atk": 601,
+          "def": 509,
+          "spd": 98
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Basic ATK",
+          "name": "Banner: Stormcaller",
+          "tag": "Single Target",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 20
+            }
+          ],
+          "toughness_dmg": 30,
+          "description": "Deals Wind DMG equal to 25%—55% of Huohuo's Max HP to a target enemy.",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Normal.png"
+        },
+        {
+          "type": "Skill",
+          "name": "Talisman: Protection",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": 30
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Dispels 1 debuff(s) from a single target ally and immediately restores this ally's HP by an amount equal to 14%—22.4% of Huohuo's Max HP plus 140—623. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to 11.2%—17.92% of Huohuo's Max HP plus 112—498.4.",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_BP.png"
+        },
+        {
+          "type": "Ultimate",
+          "name": "Tail: Spiritual Domination",
+          "tag": "Support",
+          "energy": [
+            {
+              "cost": 140,
+              "generation": 5
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Regenerates Energy for all allies (excluding this character) by an amount equal to 15%—21% of their respective Max Energy. At the same time, increases their ATK by 24%—43.2% for 2 turn(s).",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Ultra_on.png"
+        },
+        {
+          "type": "Talent",
+          "name": "Possession: Ethereal Metaflow",
+          "tag": "Restore",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "After using her Skill, Huohuo gains Divine Provision, lasting for 2 turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to 3%—4.8% of Huohuo's Max HP plus 30—133.5. At the same time, every ally with 50% HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel 1 debuff(s) from that ally. This effect can be triggered up to 6 time(s). Using the skill again resets the effect's trigger count.",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Passive.png"
+        },
+        {
+          "type": "Technique",
+          "name": "Banner: Stormcaller",
+          "tag": "Fiend: Impeachment of Evil",
+          "energy": [
+            {
+              "cost": null,
+              "generation": null
+            }
+          ],
+          "toughness_dmg": null,
+          "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s).",
+          "icon_src": "https://rerollcdn.com/STARRAIL/Skill/SkillIcon_3008_Maze.png"
+        }
+      ],
+      "headshot": "https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon_100.webp?x58040",
+      "regular_art": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/499c570b-7931-4a84-9121-8c4a1c02a470/dga8ybk-cd34710e-0d21-430c-be39-82b1903fdddc.png/v1/fill/w_1280,h_1700/huohuo_honkai_star_rail_render_by_mhesagnta_dga8ybk-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwMCIsInBhdGgiOiJcL2ZcLzQ5OWM1NzBiLTc5MzEtNGE4NC05MTIxLThjNGExYzAyYTQ3MFwvZGdhOHliay1jZDM0NzEwZS0wZDIxLTQzMGMtYmUzOS04MmIxOTAzZmRkZGMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.DgRjrbtXutZ7GPD24fxPJxpITuHdKQn34DW2f0GeW7k",
+      "splash_art": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1200?cb=20231115031700"
+    }
+  ],
+  "version_update_1.5": {
+    "character_ids": [
+      0,
+      1,
+      2,
+      9,
+      25
+    ]
+  }
 }

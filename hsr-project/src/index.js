@@ -8,6 +8,10 @@ import Root from './routes/Root'
 import Homepage from './routes/Homepage'
 import Characters from './routes/Characters'
 import CharacterSheet from './routes/CharacterSheet';
+import MyCharacters from './routes/MyCharacters';
+import 'react-toastify/dist/ReactToastify.css';
+import Collection from './routes/Collection';
+import NotImplemented from './routes/NotImplemented';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +35,7 @@ const router = createBrowserRouter([
                 .then((characters) => {
                   console.log(characters);
                   // Filter characters to match the character IDs from the version update
-                  return characters.filter(character => characterIds.includes(character.character_id));
+                  return characters.filter(character => characterIds.includes(character.id));
                   
             });
           });
@@ -69,11 +73,56 @@ const router = createBrowserRouter([
         path: '/characters/:characterId',
         element: <CharacterSheet />,
         loader(loaderData) {
-          return fetch(`http://localhost:3001/characters/${loaderData.params.characterId}`)
+          return fetch(`http://localhost:3001/characters/${loaderData.params.characterId}?_expand=element&_expand=path`)
           .then((response) => {
             return response.json();
           })
         }
+      },
+      {
+      path: '/my-characters',
+      element: <MyCharacters />,
+      },
+      {
+        path: '/my-characters/:userId',
+        element: <Collection />,
+        loader(loaderData) {
+          const userId = loaderData.params.userId;
+          const usersURL = `http://localhost:3001/users/${userId}`;
+          const charactersURL = 'http://localhost:3001/characters';
+          const pathsURL = 'http://localhost:3001/paths';
+          const elementsURL = 'http://localhost:3001/elements';
+        
+          // Fetch all required data concurrently
+          return Promise.all([
+            fetch(usersURL).then(res => res.json()),
+            fetch(charactersURL).then(res => res.json()),
+            fetch(pathsURL).then(res => res.json()),
+            fetch(elementsURL).then(res => res.json())
+          ]).then(([user, allCharacters, paths, elements]) => {
+            // Process and combine the data
+            console.log(user.userCharacters);
+            const userCharacters = user.userCharacters.map(uc => {
+              const character = allCharacters.find(c => c.id === uc.characterId);
+              return { ...character, customStats: uc.customStats };
+            });
+        
+            return { user, allCharacters, userCharacters, paths, elements };
+          });
+        }
+        
+      },
+      {
+        path: '/relics',
+        element: <NotImplemented />
+      },
+      {
+        path: '/tier-list',
+        element: <NotImplemented />
+      },
+      {
+        path: 'light-cones',
+        element: <NotImplemented />
       }
     ]
   }

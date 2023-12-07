@@ -1,8 +1,14 @@
 import React from 'react'
 import Card from '../components/Card'
 import { useLoaderData } from "react-router-dom";
+import { useEffect } from 'react';
 
 const Homepage = () => {
+
+    useEffect(() => {
+        document.title = "Home Page";  
+      }, []);
+
     const characters = useLoaderData();
 
     console.log(characters);
@@ -35,7 +41,7 @@ const Homepage = () => {
                 <div className='card-content'>
                     <div className='row d-flex justify-content-center'>
                        { characters.map((character) => {
-                            return <Card key={character.character_id} src={character.headshot}
+                            return <Card key={character.id} src={character.headshot}
                             name={character.name} 
                             rarity={character.rarity}/>
                         })

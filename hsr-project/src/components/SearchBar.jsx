@@ -7,15 +7,13 @@ const SearchBar = (props) => {
     const [input, setInput] = useState('');
     const timeoutRef = useRef(undefined);
 
-    const listId = "character-options";
-
   return (
     <div className='input-group searchbar'>
     <input
       type="search"
       className='form-control search-input'
       placeholder='Search for character'
-      list={listId}
+
       value={input}
       onChange={(event) => {
         const value = event.target.value;
@@ -37,8 +35,7 @@ const SearchBar = (props) => {
           props.setOptions(props.filteredOptions);
         }
 
-        console.log("hi");
-
+        
       }}
     />
     <button type="button" className="search-btn btn"><FontAwesomeIcon icon={faMagnifyingGlass} className='icons search-icon' /></button>

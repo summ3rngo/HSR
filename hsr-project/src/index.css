@@ -29,4 +29,12 @@ code {
                             rgb(128, 93, 196));
   --four-star: rgb(175, 111, 195);
   --five-star: rgb(238, 170, 70);
+  --fire: rgb(219, 51, 63);
+  --ice: rgb(95, 174, 231);
+  --imaginary: rgb(247, 233, 144);
+  --lightning: rgb(179, 97, 215);
+  --physical: rgb(181, 181, 181);
+  --quantum: rgb(103, 101, 196);
+  --wind: rgb(103, 239, 164);
+
 }
