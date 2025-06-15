@@ -22,8 +22,6 @@ This is a fan-built web app inspired by Pyrdwns and the official Honkai: Star Ra
 - **Backend / Data:** JSON Server (local mock API)
 - **Icons/Assets:** Reroll CDN (unofficial fan assets)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=summ3rngo&repo=HSR)
-
 ---
 
 ## 🚀 Getting Started
